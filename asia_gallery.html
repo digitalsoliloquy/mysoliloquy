@@ -1,572 +1,624 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-    <title>ART. Simple Clean Blog HTML5 Template for Artist | Designer | Agency</title>
+        <title>MONO 51.996</title>
+
         <!--Meta-->
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <meta property="og:title" content="Air. Lightweight Portfolio  Photography HTML Theme" />
+        <meta property="og:description" content="The landing page of Air. lightweight responsive theme, designed by BWSM" />
+        <meta property="og:url" content="http://html5.seatheme.net/air/entry/" />
+        <meta property="og:site_name" content="Air. Lightweight Portfolio &amp; Photography HTML Theme Live Demo Site" />
+        <meta property="og:image" content="http://html5.seatheme.net/air/entry/01-cover.jpg" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <!--Page Card for SEO-->
-        <meta property="og:title" content="ART. Simple Clean Blog HTML5 Template" />
-        <meta property="og:description" content="ART. Gallery &amp; Portfolio HTML5 Template for Creatives, Artist. Minimal, Morden, designed by SeaTheme" />
-        <meta property="og:url" content="https://html5.seatheme.net/art/entry/" />
-        <meta property="og:site_name" content="ART. Simple Clean Blog HTML5 Template Live Demo Site" />
-        <meta property="og:image" content="https://html5.seatheme.net/art/art-cover.jpg" />
-    	<meta name="twitter:card" content="ART. Simple Clean Blog HTML5 Template, designed by SeaTheme" />
-        <meta name="twitter:title" content="ART. Simple Clean Blog HTML5 Template Live Demo Site" />
-        <meta name="twitter:site" content="@Sea_Theme" />
-        <meta name="twitter:image" content="https://html5.seatheme.net/art/art-cover.jpg" />
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-114x114.png">
 
+        <!-- Google Fonts -->
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C300%7CLibre+Baskerville%3Aregular%2Citalic%2C700' type='text/css' media='all' />
 
+        <!-- Bootstrap CSS -->
+        <link rel='stylesheet' href='air_css/bootstrap.css' type='text/css' media='screen' />
+
+        <!-- Font Icon CSS -->
+        <link rel='stylesheet' href='air_css/font-awesome.min.css' type='text/css' media='screen' />
+
+        <!-- Owl Carousel Plugin CSS -->
+        <link rel='stylesheet' href='air_css/owl.carousel.css' type='text/css' media='screen' />
+
+        <!-- Lightbox Plugin CSS -->
+        <link rel='stylesheet' href='air_css/photoswipe.css' type='text/css' media='screen' />
+
+        <!-- Lightbox Plugin Skin CSS -->
+        <link rel='stylesheet' href='air_css/skin/photoswipe/default/default-skin.css' type='text/css' media='screen' />
+
+        <!-- Air. Theme Elements CSS -->
+        <link rel='stylesheet' href='air_css/pagebuild.css' type='text/css' media='screen' />
+
+        <!-- Air. Theme Main CSS -->
+        <link rel='stylesheet' href='air_css/style.css' type='text/css' media='screen' />
+    	
+        <!-- IE hack -->
+        <!--[if lte IE 9]>
+    	<link rel='stylesheet' id='cssie9'  href='css/ie.css' type='text/css' media='screen' />
+    	<![endif]-->
+
+    	<!--[if lte IE 9]>
+    	<script type="text/javascript" src="js/ie.js"></script>
+    	<![endif]-->
+    	
+    	<!--[if lte IE 8]>
+    	<div style="width: 100%;" class="messagebox_orange">Your browser is obsolete and does not support this webpage. Please use newer version of your browser or visit <a href="http://www.ie6countdown.com/" target="_new">Internet Explorer 6 countdown page</a>  for more information. </div>
+    	<![endif]-->
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Rock+3D&display=swap');
         </style>
-
-
-        <!-- Favicon -->
-        <link rel="icon" href="img/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" href="img/favicon-192x192.png" sizes="192x192" />
-        <link rel="apple-touch-icon" href="img/favicon-180x180.png" />
-        <meta name="msapplication-TileImage" content="img/favicon-270x270.png" />
-
-        <!-- Bootstrap CSS -->
-        <link rel='stylesheet' href='css/bootstrap.css' type='text/css' media='screen' />
-
-        <!-- Owl Carousel Plugin CSS -->
-        <link rel='stylesheet' href='css/owl.carousel.css' type='text/css' media='screen' />
-
-        <!-- IconFont CSS -->
-        <link rel='stylesheet' href='css/font-awesome.min.css' type='text/css' media='screen' />
-
-        <!-- Lightbox Plugin CSS -->
-        <link rel='stylesheet' href='css/photoswipe.css' type='text/css' media='screen' />
-
-        <!-- Lightbox Plugin Skin CSS -->
-        <link rel='stylesheet' href='css/skin/photoswipe/default/default-skin.css' type='text/css' media='screen' />
-
-         <!-- BM builder CSS -->
-        <link rel='stylesheet' href='css/modules-style.css' type='text/css' media='screen' />
-
-        <!-- Single Portolio CSS -->
-        <link rel='stylesheet' href='css/post-portfolio.css' type='text/css' media='screen' />
-
-        <!-- Menu icon & Header icon CSS -->
-        <link rel='stylesheet' href='css/menuicon-default.css' type='text/css' media='screen' />
-        <link rel='stylesheet' href='css/headericon-default.css' type='text/css' media='screen' />
-
-        <!-- Art Theme Main CSS -->
-        <link rel='stylesheet' href='css/style.css' type='text/css' media='screen' />
-
-        <!--Custom style CSS -->
-        <link rel="stylesheet" href="css/custom.css" type="text/css" media='screen'>
-
-        <script>
-            var photoSwipeLocalize = [];photoSwipeLocalize.push({id:"facebook", label:"Share on Facebook", url:"https://www.facebook.com/sharer/sharer.php?u={{url}}"});photoSwipeLocalize.push({id:"twitter", label:"Tweet", url:"https://twitter.com/intent/tweet?text={{text}}&url={{url}}"});photoSwipeLocalize.push({id:"pinterest", label:"Pin it", url:"http://www.pinterest.com/pin/create/button/"+ "?url={{url}}&media={{image_url}}&description={{text}}"});photoSwipeLocalize.push({id:"download", label:"Download image", url:"{{raw_image_url}}", download:true});
-            var isFilterClick = false;
-            var UxCBModGlobal = [];
-            var UxCBModGlobalAjax = "false";
-            var ajaxurl = "";
-            var JS_PATH = "/js/"
-        </script>
-
-        <style id='module-style-inline-css' type='text/css'> 
-            
-        </style>
-
 	</head>
   
-    <body class="page pswp-light-skin responsive-ux navi-hide navi-hide-pop2 hide-menu-desktop show-menu-icon-mobile menu-hover-default default-logo default-menu default-logo-menu-expand default-logo-menu-mobile header-sticky-none">
+    <body class="page page-template-default default-dark-logo pswp-dark-skin responsive-ux page-template-masonry-body page-template-intro-above-list-body navi-hide show-top-space dark-logo header-sticky preload">
+      
+        <!--Page Loader-->
+        <div class="page-loading fullscreen-wrap visible">
+            <div class="page-loading-inn">
+                <div class="page-loading-transform">
+                    <div class="site-loading-logo"><img src="img/demo/logo-loading.png" alt="Air Theme" /></div>
+                </div>
+            </div>
+        </div>
 
+        <!--Audio Player-->
+        <div id="jquery_jplayer" class="jp-jplayer"></div>
+
+        <!--Main wrap-->
         <div class="wrap-all">
 
-            <!--Audio Player-->
-            <div id="jquery_jplayer" class="jp-jplayer"></div>
-
-            <!--Main wrap-->
             <div id="wrap-outer">
 
                 <!--Header-->
-                <header id="header" class=" " data-scroll="0">
+                <header id="header" class="">
 
-                    <div id="header-main" class="header-main container-fluid"> 
+                    <div id="header-main">
+                    
+                        <div class="container-fluid">
 
-                        <!-- Logo -->
-                        <div class="navi-logo">
+                            <span id="navi-trigger">
+                                <span class="navi-trigger-text">
+                                    <span class="navi-trigger-text-menu navi-trigger-text-inn" style="font-family: 'Rock 3D', cursive; font-size: xx-large;">MENU</span>
+                                    <span class="navi-trigger-text-close navi-trigger-text-inn" style="font-family: 'Rock 3D', cursive;">CLOSE</span>
+                                </span>
+                                <span class="navi-trigger-inn">
+                                    <span class="navi-trigger-hamberg-line navi-trigger-hamberg-line1"></span>
+                                    <span class="navi-trigger-hamberg-line navi-trigger-hamberg-line2"></span>
+                                    <span class="navi-trigger-hamberg-line navi-trigger-hamberg-line3"></span>
+                                </span>
+                            </span>
 
-                            <div class="logo-wrap">
-                                <div class="logo " id="logo">
-                                    <a class="logo-a" href="mono_home.html" title="ART. Gallery &amp; Portfolio HTML5 Template">
-                                        <span class="logo-text" style="font-family: 'Rock 3D', cursive;">MONO/2X-30</span>
-                                    </a>
-                                </div>    
-                            </div><!--End logo wrap-->
+                                        
+                            <div class="navi-logo">
 
-                        </div><!--End navi-logo-->
-
-                        <!--Menu on header-->
-                        <div class="head-meta">
-
-                            <!--Navigation-->
-                            <!-- <nav id="navi-header" class="navi-header">
-                                <div id="navi_wrap" class="menu-main-container">
-                                    <ul class="menu clearfix">
-                                        <li class="menu-item"><a href="index.html">Works</a></li>
-                                        <li class="menu-item"><a href="blog.html">Blog</a></li> 
-                                        <li class="menu-item"><a href="page-info.html">Info</a></li>
-                                    </ul>
-                                </div>
-                            </nav> -->
-
-                            <!--Menu Icon-->
-                            <div class="navi-trigger-out navi-trigger-hamburg">
-
-                                <a href="javascript:;" id="navi-trigger" class="navi-trigger">
-                                    <svg class="navi-trigger-svg svg-style02" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 380">
-                                        <g class="svg-style02-line2 svg-style02-line"><rect class="svg-style02-line-rect" width="380" height="50" /></g>
-                                        <g class="svg-style02-line1 svg-style02-line"><rect class="svg-style02-line-rect" width="380" height="50" /></g>
-                                    </svg>
-                                </a>
-
+                                <div class="logo-wrap">
+                                    <div id="logo">
+                                        <a class="logo-a" href="mono_home.html" title="Air Theme">
+                                            <h1 class="logo-h1" style="font-family: 'Rock 3D', cursive; font-size:xx-large; text-shadow: 0.1px 0.1px black;">MONO 51.996</h1>
+                                        
+                                          
+                                        </a>
+                                    </div>
+                                </div><!--End logo wrap-->
+                                 
                             </div>
                         
-                        </div><!--End head-meta-->
-
-                    </div><!--End head-main--> 
+                        </div>
+                        
+                    </div><!--End header main-->
                     
                 </header>
 
-                <!--Expanded Menu Panel-->
-                <div id="menu-panel" class="menu-panel menu-panel-align-center menu-panel-bottom-layout-b" style="background-color: white;">
+                <div id="menu-panel">
 
-                    <div class="menu-panel-inn container-fluid">
+                    <div class="menu-panel-inn fullscreen-wrap">
                      
-                        <nav id="navi" class="navi">
+                        <nav id="navi">
 
-                            <div id="navi-wrap">
+                            <div id="navi-wrap" class="menu-navi-wrap">
 
                                 <ul class="menu clearfix">
-                                    <li class="menu-item"><a href="test.html" style="font-family: 'Rock 3D', cursive;">Home</a></li>
-                                    <li class="menu-item"><a href="blog.html" style="font-family: 'Rock 3D', cursive;">Blog</a></li>
-                                    <li class="menu-item"><a href="page-info.html" style="font-family: 'Rock 3D', cursive;">About</a></li>
+                                    <li id="menu-item-246" class="menu-item"><a href="page-news.html" style="font-family: 'Rock 3D', cursive; font-size: xx-large;">DIGITAL SOLILOQUY</a></li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a style="font-family: 'Rock 3D', cursive; font-size: xx-large;">MONO MENU</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="mono_home.html" style="font-family: 'Rock 3D', cursive; font-size: xx-large;">HOME</a></li>
+                                            <li class="menu-item"><a href="africa_gallery.html" style="font-family: 'Rock 3D', cursive; font-size: xx-large;">AFRICA</a></li>
+                                            <li class="menu-item"><a href="europe_gallery.html" style="font-family: 'Rock 3D', cursive; font-size: xx-large;">EUROPE</a></li>
+                                            <li class="menu-item"><a href="north_america_gallery.html" style="font-family: 'Rock 3D', cursive; font-size: xx-large;">NORTH AMERICA</a></li>
+                                            <li class="menu-item"><a href="concept_gallery.html" style="font-family: 'Rock 3D', cursive; font-size: xx-large;">CONCEPT</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li id="menu-item-256" class="menu-item"><a href="page-info.html"  style="font-family: 'Rock 3D', cursive; font-size: xx-large;">ME</a></li>
                                 </ul>
 
-                            </div><!--End #navi_wrap-->
+                            </div>
+
                         </nav>
 
-                        <div id="menu-panel-bottom" class="menu-panel-bottom container-fluid ">
+                        <div id="menu-panel-bottom" class="container-fluid"> 
 
-                            <div class="menu-panel-bottom-left col-md-6 col-sm-6 col-xs-6">
+                            <div class="menu-panel-bottom-left col-md-3 col-sm-3 col-xs-3">
 
-                                <div class="menu-panel-text middle-ux" style="font-family: 'Amatic SC';">
-                                Matthew J. Stott
+                                <div class="search-top-btn-class">
+                                    <span class="fa fa-search"></span>
+                                    <form class="search_top_form"  method="get" action="#">
+                                        <input type="search" id="s" name="s" class="search_top_form_text" placeholder="Type and Hit Enter">
+                                    </form>
+                                </div> 
+
+                            </div>
+
+                            <!-- <div class="menu-panel-bottom-right col-md-9 col-sm-9 col-xs-9">
+
+                                <div class="socialmeida-mobile">
+                                        
+                                    <ul class="socialmeida clearfix">                       
+                                        <li class="socialmeida-li">
+                                            <a title="Facebook" href="https://www.facebook.com/uiueux" class="socialmeida-a">
+                                                <span class=""></span> <span class="socialmeida-text">Facebook</span>
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="socialmeida-li">
+                                            <a title="Twitter" href="https://twitter.com/uiueux" class="socialmeida-a">
+                                                <span class=""></span> <span class="socialmeida-text">Twitter</span>
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="socialmeida-li">
+                                            <a title="Behance" href="https://www.behance.net/bwsm" class="socialmeida-a">
+                                                <span class=""></span> <span class="socialmeida-text">Behance</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                        
                                 </div>
 
-                            </div><!--End menu-panel-bottom-left-->
+                            </div> -->
 
-                            <div class="menu-panel-bottom-right col-md-6 col-sm-6 col-xs-6">
-
-                                <section class="">
-            
-                                    <ul class="socialmeida clearfix">                       
-                                
-                                        <li class="socialmeida-li">
-                                            <a title="" href="https://twitter.com/Sea_Theme" class="socialmeida-a" rel="nofollow ">
-                                                <span class="fa fa-twitter"></span> </a>
-                                        </li>
-                                                
-                                        <li class="socialmeida-li">
-                                            <a title="" href="https://www.facebook.com/Uiueux/" class="socialmeida-a" rel="nofollow ">
-                                                <span class="fa fa-facebook"></span> </a>
-                                        </li>
-                                                
-                                        <li class="socialmeida-li">
-                                            <a title="" href="https://www.behance.net/bwsm" class="socialmeida-a" rel="nofollow ">
-                                                <span class="fa fa-behance"></span> </a>
-                                        </li>
-                                                
-                                       <!--  <li class="socialmeida-li">
-                                            <a title="" href="" class="socialmeida-a" rel="nofollow ">
-                                                <span class="fa fa-linkedin"></span> </a>
-                                        </li>
-                                                
-                                        <li class="socialmeida-li">
-                                            <a title="" href="" class="socialmeida-a" rel="nofollow ">
-                                                <span class="fa fa-youtube"></span> </a>
-                                        </li>
-                                                
-                                        <li class="socialmeida-li">
-                                            <a title="" href="" class="socialmeida-a" rel="nofollow ">
-                                                <span class="fa fa-flickr"></span> </a>
-                                        </li> -->
-                                    </ul>
-            
-                                </section>
-
-                            </div><!--End menu-panel-bottom-right-->
-
-                        </div><!--End #menu-panel-bottom-->
+                        </div>
 
                     </div>
 
                 </div><!--End #menu-panel-->
+<!-- Main Content Wrap -->
+            <!-- Main Content Wrap -->
+        		<div id="wrap">
 
-    			
-                <!-- Main Content Wrap -->
-        		<div id="wrap"> 
-
-                    <!-- Main Content : portfolio, text content ... -->
+                    <!-- Main Content : List, text content ... -->
         	        <div id="content">
-						<div id="post-1680" class="post-1680 page type-page status-publish hentry">
-							<div class="content_wrap_outer fullwrap-layout">
-								<div id="content_wrap" class="">
-									<div class="entry container-fluid container-class">
 
-                                        <!--BM Builder-->
-										<div class="bm-builder clearfix ">
+                        <div class="content_wrap_outer fullwrap-layout">
+                    
+                                <div id="content_wrap" class="">
 
-											<!--Grid module--> 
-											<div id="" class="module col-12 module-id-1573184716638" data-module-col="12">
-												<div class="module-inside " style="margin-top:60px; --spacing-grid:20px; --spacing-grid-m:10px;">
-													<div class="container-masonry ux-portfolio-2col  ux-portfolio-full ux-has-filter ux-ratio-43 filter-left " data-ratio="0.75" data-col="2" data-found="10" data-number="999" data-mod="grid">
-                                                        <!--Filters -->
-														<div class="clearfix grid-list-filter filters " style="margin-bottom: 50px; --marginbottom-grid-filter: 20px; --fontsize-grid-filter: 22px; --fontsize-grid-filter-m: 14px; --marginright-grid-filter-item: 40px; --marginleft-grid-filter-item: 0px;">
-															<ul class="filters-ul">
-																<li class="filters-li active">
-																	<a id="all" class="filters-a" href="#" data-filter="*" style="font-family: 'Amatic SC';font-size: 40px;">All
-																		<span class="filter-num">10</span>
-																	</a>
-																</li>
-																<li class="filters-li">
-																	<a class="filters-a" data-filter=".filter_branding" href="https://art.seatheme.net/ux-portfolio-cat/branding/" data-catid="21" data-postid="1680" style="font-family: 'Amatic SC'; font-size: 40px;">South Korea
-																		<span class="filter-num">3</span>
-																	</a>
-																</li>
-																<li class="filters-li">
-																	<a class="filters-a" data-filter=".filter_illustration" href="https://art.seatheme.net/ux-portfolio-cat/illustration/" data-catid="13" data-postid="1680"style="font-family: 'Amatic SC';font-size: 40px;">Tokyo
-																		<span class="filter-num">4</span>
-																	</a>
-																</li>
-																<li class="filters-li">
-																	<a class="filters-a" data-filter=".filter_ui" href="https://art.seatheme.net/ux-portfolio-cat/ui/" data-catid="17" data-postid="1680" style="font-family: 'Amatic SC';font-size: 40px;">North Korean DMZ
-																		<span class="filter-num">6</span>
-																	</a>
-																</li>
-															</ul>
-														</div>
+                                    <div class="container-masonry ux-portfolio-spacing-40 ux-portfolio-3col ux-portfolio-full ux-has-filter filter-center " data-col="3" data-spacer="40" data-template="intro-above">
 
-														<div class="masonry-list grid-list clearfix grid-list-1573184716638  grid-text-center lightbox-photoswipe  mouseover-no-effect "  data-unique="1573184716638" data-source="ux-portfolio">
-															<section class="grid-item sea-grid-item filter_ui filter_works " data-postid="1498">
-																<div class="grid-item-inside   " data-animationend="fadeined">
-																	<div class="grid-item-con  sea-grid-item-con post--1498" data-lightbox="true">
-																		<a data-title="" title="" class="lightbox-item grid-item-mask-link" href="images/photography/asia/north_korea/border.jpg" data-size="1260x340" data-type="">
-																			<img class="lightbox-img-hide" width="350" height="178" src="images/photography/asia/north_korea/border.jpg" alt="Gallery on Left" />
-																		</a>
-																		<div class="grid-item-con-text"></div>
-																	</div>
-																	<div class="brick-content ux-lazyload-wrap  " style=" padding-top: 50.857142857143%;">
-																		<img class="grid-item-img ux-background-img-1st lazy" src="images/photography/asia/north_korea/border.jpg" data-src="images/photography/asia/north_korea/border.jpg" alt="Gallery on Left">
-																	</div>
-																</div>
-															</section>
-															<section class="grid-item sea-grid-item filter_ui filter_works " data-postid="1499">
-																<div class="grid-item-inside   " data-animationend="fadeined">
-																	<div class="grid-item-con  sea-grid-item-con post--1499" data-lightbox="true">
-																		<a data-title="" title="" class="lightbox-item grid-item-mask-link" href="images/photography/asia/south_korea/statue2.jpg" data-size="1260x640" data-type="">
-																			<img class="lightbox-img-hide" width="350" height="178" src="images/photography/asia/south_korea/statue2.jpg" alt="Gallery on Left" />
-																		</a>
-																		<div class="grid-item-con-text"></div>
-																	</div>
-																	<div class="brick-content ux-lazyload-wrap  " style=" padding-top: 50.857142857143%;">
-																		<img class="grid-item-img ux-background-img-1st lazy" src="images/photography/asia/south_korea/statue2.jpg" data-src="images/photography/asia/south_korea/statue2.jpg" alt="Title on Left">
-																	</div>
-																</div>
-															</section>
-                                                            <section class="grid-item sea-grid-item filter_ui filter_works " data-postid="1500">
-																<div class="grid-item-inside   " data-animationend="fadeined">
-																	<div class="grid-item-con  sea-grid-item-con post--1500" data-lightbox="true">
-																		<a data-title="" title="" class="lightbox-item grid-item-mask-link" href="images/photography/asia/tokyo/baby.jpg" data-size="1260x640" data-type="">
-																			<img class="lightbox-img-hide" width="350" height="178" src="images/photography/asia/tokyo/baby.jpg" alt="Gallery on Left" />
-																		</a>
-																		<div class="grid-item-con-text"></div>
-																	</div>
-																	<div class="brick-content ux-lazyload-wrap  " style=" padding-top: 50.857142857143%;">
-																		<img class="grid-item-img ux-background-img-1st lazy" src="images/photography/asia/tokyo/baby.jpg" data-src="images/photography/asia/tokyo/baby.jpg" alt="Title on Left">
-																	</div>
-																</div>
-															</section>
-                                                            <section class="grid-item sea-grid-item filter_ui filter_works " data-postid="1501">
-																<div class="grid-item-inside   " data-animationend="fadeined">
-																	<div class="grid-item-con  sea-grid-item-con post--1501" data-lightbox="true">
-																		<a data-title="" title="" class="lightbox-item grid-item-mask-link" href="images/photography/asia/tokyo/zilla.jpg" data-size="1260x640" data-type="">
-																			<img class="lightbox-img-hide" width="350" height="178" src="images/photography/asia/tokyo/zilla.jpg" alt="Gallery on Left" />
-																		</a>
-																		<div class="grid-item-con-text"></div>
-																	</div>
-																	<div class="brick-content ux-lazyload-wrap  " style=" padding-top: 50.857142857143%;">
-																		<img class="grid-item-img ux-background-img-1st lazy" src="images/photography/asia/tokyo/zilla.jpg" data-src="images/photography/asia/tokyo/zilla.jpg" alt="Title on Left">
-																	</div>
-																</div>
-															</section>
-                                                            <section class="grid-item sea-grid-item filter_ui filter_works " data-postid="1501">
-																<div class="grid-item-inside   " data-animationend="fadeined">
-																	<div class="grid-item-con  sea-grid-item-con post--1501" data-lightbox="true">
-																		<a data-title="" title="" class="lightbox-item grid-item-mask-link" href="iimages/photography/asia/tokyo/sake.jpg" data-size="1260x640" data-type="">
-																			<img class="lightbox-img-hide" width="350" height="178" src="images/photography/asia/tokyo/sake.jpg" alt="Gallery on Left" />
-																		</a>
-																		<div class="grid-item-con-text"></div>
-																	</div>
-																	<div class="brick-content ux-lazyload-wrap  " style=" padding-top: 50.857142857143%;">
-																		<img class="grid-item-img ux-background-img-1st lazy" src="images/photography/asia/tokyo/sake.jpg" data-src="images/photography/asia/tokyo/sake.jpg" alt="Title on Left">
-																	</div>
-																</div>
-															</section>
-                                                            <section class="grid-item sea-grid-item filter_ui filter_works " data-postid="1501">
-																<div class="grid-item-inside   " data-animationend="fadeined">
-																	<div class="grid-item-con  sea-grid-item-con post--1501" data-lightbox="true">
-																		<a data-title="" title="" class="lightbox-item grid-item-mask-link" href="images/photography/asia/south_korea/gate.jpg" data-size="1260x640" data-type="">
-																			<img class="lightbox-img-hide" width="350" height="178" src="images/photography/asia/south_korea/gate.jpg" alt="Gallery on Left" />
-																		</a>
-																		<div class="grid-item-con-text"></div>
-																	</div>
-																	<div class="brick-content ux-lazyload-wrap  " style=" padding-top: 50.857142857143%;">
-																		<img class="grid-item-img ux-background-img-1st lazy" src="images/photography/asia/south_korea/gate.jpg" data-src="images/photography/asia/south_korea/gate.jpg" alt="Title on Left">
-																	</div>
-																</div>
-															</section>
-                                                            <section class="grid-item sea-grid-item filter_ui filter_works " data-postid="1501">
-																<div class="grid-item-inside   " data-animationend="fadeined">
-																	<div class="grid-item-con  sea-grid-item-con post--1501" data-lightbox="true">
-																		<a data-title="" title="" class="lightbox-item grid-item-mask-link" href="images/photography/asia/south_korea/gateplus.jpg" data-size="1260x640" data-type="">
-																			<img class="lightbox-img-hide" width="350" height="178" src="images/photography/asia/south_korea/gateplus.jpg" alt="Gallery on Left" />
-																		</a>
-																		<div class="grid-item-con-text"></div>
-																	</div>
-																	<div class="brick-content ux-lazyload-wrap  " style=" padding-top: 50.857142857143%;">
-																		<img class="grid-item-img ux-background-img-1st lazy" src="images/photography/asia/south_korea/gateplus.jpg" data-src="images/photography/asia/south_korea/gateplus.jpg" alt="Title on Left">
-																	</div>
-																</div>
-															</section>
-                                                            <section class="grid-item sea-grid-item filter_ui filter_works " data-postid="1501">
-																<div class="grid-item-inside   " data-animationend="fadeined">
-																	<div class="grid-item-con  sea-grid-item-con post--1501" data-lightbox="true">
-																		<a data-title="" title="" class="lightbox-item grid-item-mask-link" href="images/photography/asia/north_korea/table.jpg" data-size="1260x640" data-type="">
-																			<img class="lightbox-img-hide" width="350" height="178" src="images/photography/asia/north_korea/table.jpg" alt="Gallery on Left" />
-																		</a>
-																		<div class="grid-item-con-text"></div>
-																	</div>
-																	<div class="brick-content ux-lazyload-wrap  " style=" padding-top: 50.857142857143%;">
-																		<img class="grid-item-img ux-background-img-1st lazy" src="images/photography/asia/north_korea/table.jpg" data-src="images/photography/asia/north_korea/table.jpg" alt="Title on Left">
-																	</div>
-																</div>
-															</section>
-                                                            <section class="grid-item sea-grid-item filter_ui filter_works " data-postid="1501">
-																<div class="grid-item-inside   " data-animationend="fadeined">
-																	<div class="grid-item-con  sea-grid-item-con post--1501" data-lightbox="true">
-																		<a data-title="" title="" class="lightbox-item grid-item-mask-link" href="images/photography/asia/south_korea/house.jpg" data-size="1260x640" data-type="">
-																			<img class="lightbox-img-hide" width="350" height="178" src="images/photography/asia/south_korea/house.jpg" alt="Gallery on Left" />
-																		</a>
-																		<div class="grid-item-con-text"></div>
-																	</div>
-																	<div class="brick-content ux-lazyload-wrap  " style=" padding-top: 50.857142857143%;">
-																		<img class="grid-item-img ux-background-img-1st lazy" src="images/photography/asia/south_korea/house.jpg" data-src="images/photography/asia/south_korea/house.jpg" alt="Title on Left">
-																	</div>
-																</div>
-															</section>
-                                                            <section class="grid-item sea-grid-item filter_ui filter_works " data-postid="1501">
-																<div class="grid-item-inside   " data-animationend="fadeined">
-																	<div class="grid-item-con  sea-grid-item-con post--1501" data-lightbox="true">
-																		<a data-title="" title="" class="lightbox-item grid-item-mask-link" href="images/photography/asia/tokyo/shibuya.jpg" data-size="1260x640" data-type="">
-																			<img class="lightbox-img-hide" width="350" height="178" src="images/photography/asia/tokyo/shibuya.jpg" alt="Gallery on Left" />
-																		</a>
-																		<div class="grid-item-con-text"></div>
-																	</div>
-																	<div class="brick-content ux-lazyload-wrap  " style=" padding-top: 50.857142857143%;">
-																		<img class="grid-item-img ux-background-img-1st lazy" src="images/photography/asia/tokyo/shibuya.jpg" data-src="images/photography/asia/tokyo/shibuya.jpg" alt="Title on Left">
-																	</div>
-																</div>
-															</section>
-                                                            <section class="grid-item sea-grid-item filter_ui filter_works " data-postid="1501">
-																<div class="grid-item-inside   " data-animationend="fadeined">
-																	<div class="grid-item-con  sea-grid-item-con post--1501" data-lightbox="true">
-																		<a data-title="" title="" class="lightbox-item grid-item-mask-link" href="images/photography/asia/tokyo/garden.jpg" data-size="1260x640" data-type="">
-																			<img class="lightbox-img-hide" width="350" height="178" src="images/photography/asia/tokyo/garden.jpg" alt="Gallery on Left" />
-																		</a>
-																		<div class="grid-item-con-text"></div>
-																	</div>
-																	<div class="brick-content ux-lazyload-wrap  " style=" padding-top: 50.857142857143%;">
-																		<img class="grid-item-img ux-background-img-1st lazy" src="images/photography/asia/tokyo/garden.jpg" data-src="images/photography/asia/tokyo/garden.jpg" alt="Title on Left">
-																	</div>
-																</div>
-															</section>
-                                                            <section class="grid-item sea-grid-item filter_ui filter_works " data-postid="1501">
-																<div class="grid-item-inside   " data-animationend="fadeined">
-																	<div class="grid-item-con  sea-grid-item-con post--1501" data-lightbox="true">
-																		<a data-title="" title="" class="lightbox-item grid-item-mask-link" href="images/photography/asia/south_korea/high.jpg" data-size="1260x640" data-type="">
-																			<img class="lightbox-img-hide" width="350" height="178" src="images/photography/asia/south_korea/high.jpg" alt="Gallery on Left" />
-																		</a>
-																		<div class="grid-item-con-text"></div>
-																	</div>
-																	<div class="brick-content ux-lazyload-wrap  " style=" padding-top: 50.857142857143%;">
-																		<img class="grid-item-img ux-background-img-1st lazy" src="images/photography/asia/south_korea/high.jpg" data-src="images/photography/asia/south_korea/high.jpg" alt="Title on Left">
-																	</div>
-																</div>
-															</section>
-                                                        </section>
-                                                        <section class="grid-item sea-grid-item filter_ui filter_works " data-postid="1501">
-                                                            <div class="grid-item-inside   " data-animationend="fadeined">
-                                                                <div class="grid-item-con  sea-grid-item-con post--1501" data-lightbox="true">
-                                                                    <a data-title="" title="" class="lightbox-item grid-item-mask-link" href="images/photography/asia/south_korea/flowers.jpg" data-size="1260x640" data-type="">
-                                                                        <img class="lightbox-img-hide" width="350" height="178" src="images/photography/asia/south_korea/flowers.jpg"" alt="Gallery on Left" />
-                                                                    </a>
-                                                                    <div class="grid-item-con-text"></div>
-                                                                </div>
-                                                                <div class="brick-content ux-lazyload-wrap  " style=" padding-top: 50.857142857143%;">
-                                                                    <img class="grid-item-img ux-background-img-1st lazy" src="images/photography/asia/south_korea/flowers.jpg"" data-src="images/photography/asia/south_korea/flowers.jpg"" alt="Title on Left">
-                                                                </div>
-                                                            </div>
-                                                        </section>
-                                                        <section class="grid-item sea-grid-item filter_ui filter_works " data-postid="1501">
-                                                            <div class="grid-item-inside   " data-animationend="fadeined">
-                                                                <div class="grid-item-con  sea-grid-item-con post--1501" data-lightbox="true">
-                                                                    <a data-title="" title="" class="lightbox-item grid-item-mask-link" href="images/photography/asia/tokyo/shinjuku.png" data-size="1260x640" data-type="">
-                                                                        <img class="lightbox-img-hide" width="350" height="178" src="images/photography/asia/tokyo/shinjuku.png" alt="Gallery on Left" />
-                                                                    </a>
-                                                                    <div class="grid-item-con-text"></div>
-                                                                </div>
-                                                                <div class="brick-content ux-lazyload-wrap  " style=" padding-top: 50.857142857143%;">
-                                                                    <img class="grid-item-img ux-background-img-1st lazy" src="images/photography/asia/tokyo/shinjuku.png" data-src="images/photography/asia/tokyo/shinjuku.png" alt="Title on Left">
-                                                                </div>
-                                                            </div>
-                                                        </section>
-														</div>
-													</div>
-												</div><!--End module-inside-->
-											</div><!--End module-->
-										</div><!--End bm-builder-->
-										<div class="clear"></div>
-									</div><!--End entry-->
-								</div><!--End content_wrap-->
-							</div><!--End content_wrap_outer-->
-						</div><!--end #postID-->
+                                        <div class="filters clearfix">
+
+                                            <ul class="filters-ul container">
+                                                <li class="filters-li">[<span class="filter-num"></span></li>
+                                                <li class="filters-li active"><a id="all" class="filters-a" href="#" data-filter="*">All<span class="filter-num">13</span></a></li>
+                                                <li class="filters-li"><a class="filters-a" data-filter=".filter_north" href="#" data-catid="16" data-pageid="427" >North Korea DMZ<span class="filter-num">2</span></a></li>
+                                                <li class="filters-li"><a class="filters-a" data-filter=".filter_seoul" href="#" data-catid="15" data-pageid="427">Seoul<span class="filter-num">6</span></a></li>
+                                                <li class="filters-li"><a class="filters-a" data-filter=".filter_tokyo" href="#" data-catid="17" data-pageid="427">Tokyo<span class="filter-num">5</span></a></li> 
+                                                <li class="filters-li">]<span class="filter-num"></span></li>
+                                            </ul>
+                                                                    
+                                        </div><!--End filter-->
+                                       
+                                        <div class="masonry-list masonry-grid img-zoom-in lightbox-photoswipe">
+
+                                            <section class="grid-item grid-item-long grid-item—width2 filter_north" data-postid="331">
+                                                <div class="grid-item-inside" data-lightbox="true">
+                                                    <div class="grid-item-con">
+                                                        <a title="" class="lightbox-item grid-item-mask-link" href="images/photography/asia/north_korea/border_1_expanded.jpg" data-type="" data-size="1200x675"><img class="lightbox-img-hide" width="1200" height="675" src="images/photography/asia/north_korea/border_1_expanded.jpg" alt="P15" title="P15" /></a>
+                                                                
+                                                        <div class="grid-item-con-text">
+                                                            <span class="grid-item-cate"><a href="#" title="View all posts in Life" class="grid-item-cate-a"data-filter=.>Life</a></span>
+                                                            <h2 class="grid-item-tit">P15</h2>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="brick-content ux-lazyload-wrap" style=" padding-top: 66.461538461538%;"> 
+                                                        <img class="ux-lazyload-img lazy" width="1200" height="675" alt="P15" title="P15" src="images/photography/asia/north_korea/border_1_preview.jpg" data-src="images/photography/asia/north_korea/border_1_preview.jpg"/>
+                                                    </div>
+                                                            
+                                                </div><!--End inside-->
+
+                                            </section> 
+                            
+                                            <section class="grid-item filter_photography filter_north">
+                                                <div class="grid-item-inside" data-lightbox="true">
+                                                    <div class="grid-item-con">
+                                                        <a title="" class="lightbox-item grid-item-mask-link" href="images/photography/asia/north_korea/table_1_expanded.jpg" data-type="" data-size="1200x675"><img class="lightbox-img-hide" width="1200" height="675" src="images/photography/asia/north_korea/table_1_expanded.jpg" alt="P14" title="P14" /></a>
+                                                                
+                                                        <div class="grid-item-con-text">
+                                                            <span class="grid-item-cate"><a href="#" title="View all posts in Travel" class="grid-item-cate-a"data-filter=.>Travel</a></span>
+                                                            <h2 class="grid-item-tit">P14</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="brick-content ux-lazyload-wrap" style=" padding-top: 66.461538461538%;"> 
+                                                        <img class="ux-lazyload-img lazy" width="1200" height="675" alt="P14" title="P14" src="images/photography/asia/north_korea/table_1_preview.jpg" data-src="images/photography/asia/north_korea/table_1_preview.jpg"/>
+                                                        </div> 
+                                                </div><!--End inside-->
+
+                                            </section> 
+                            
+                                            <section class="grid-item   filter_photography filter_tokyo" data-postid="327">
+                                                <div class="grid-item-inside" data-lightbox="true">
+                                                    <div class="grid-item-con">
+                                                        <a title="" class="lightbox-item grid-item-mask-link" href="images/photography/asia/tokyo/baby_1_expanded.jpg" data-type="" data-size="4032x2268"><img class="lightbox-img-hide" width="4032" height="2268" src="images/photography/asia/tokyo/baby_1_expanded.jpg" alt="P13" title="P13" /></a>
+                                                                
+                                                        <div class="grid-item-con-text">
+                                                            <span class="grid-item-cate"><a href="#" title="View all posts in Life" class="grid-item-cate-a"data-filter=.>Life</a></span>
+                                                            <h2 class="grid-item-tit">P13</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="brick-content ux-lazyload-wrap" style=" padding-top: 184.61538461538%;"> 
+                                                        <img class="ux-lazyload-img lazy" width="4032" height="2268" alt="P13" title="P13" src="images/photography/asia/tokyo/baby_1_preview.jpg" data-src="images/photography/asia/tokyo/baby_1_preview.jpg"/>
+                                                    </div>
+                                                                
+                                                </div><!--End inside-->
+
+                                            </section> 
+                            
+                                            <section class="grid-item   filter_photography filter_tokyo" data-postid="324">
+                                                <div class="grid-item-inside" data-lightbox="true">
+                                                    <div class="grid-item-con">
+                                                        <a title="" class="lightbox-item grid-item-mask-link" href="images/photography/asia/tokyo/zilla_1_expanded.jpg" data-type="" data-size="1200x675"><img class="lightbox-img-hide" width="1200" height="675" src="images/photography/asia/tokyo/zilla_1_expanded.jpg" alt="P12" title="P12" /></a>
+                                                                
+                                                        <div class="grid-item-con-text">
+                                                            <span class="grid-item-cate"><a href="#" title="View all posts in People" class="grid-item-cate-a"data-filter=.>People</a></span>
+                                                            <h2 class="grid-item-tit">P12</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="brick-content ux-lazyload-wrap" style=" padding-top: 84.61538%;"> 
+                                                        <img class="ux-lazyload-img lazy" width="1200" height="675" alt="P12" title="P12" src="images/photography/asia/tokyo/zilla_1_preview.jpg" data-src="images/photography/asia/tokyo/zilla_1_preview.jpg"/>
+                                                    </div>
+                                                            
+                                                </div><!--End inside-->
+
+                                            </section> 
+                                            
+                                            
+
+
+                                            <section class="grid-item  filter_photography filter_seoul" data-postid="322">
+                                                <div class="grid-item-inside" data-lightbox="true">
+                                                    <div class="grid-item-con">
+                                                        <a title="" class="lightbox-item grid-item-mask-link" href="images/photography/asia/south_korea/flowers_1_expanded.jpg" data-type="" data-size="3987x1868"><img class="lightbox-img-hide" width="3987" height="1868" src="images/photography/asia/south_korea/flowers_1_expanded.jpg" alt="P11" title="P11" /></a>
+                                                                
+                                                        <div class="grid-item-con-text">
+                                                            <span class="grid-item-cate"><a href="#" title="View all posts in Travel" class="grid-item-cate-a"data-filter=.>Travel</a></span>
+                                                            <h2 class="grid-item-tit">P11</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="brick-content ux-lazyload-wrap" style=" padding-top: 150.30769230769%;"> 
+                                                        <img class="ux-lazyload-img lazy" width="3987" height="1868" alt="P11" title="P11" src="images/photography/asia/south_korea/flowers_1_preview.jpg" data-src="images/photography/asia/south_korea/flowers_1_preview.jpg"/>
+                                                    </div>
+                                                                
+                                                </div><!--End inside-->
+
+                                            </section> 
+                            
+                                            
+                                        
+                                            <section class="grid-item  grid-item-long filter_photography filter_seoul" data-postid="316">
+                                                <div class="grid-item-inside" data-lightbox="true">
+                                                    <div class="grid-item-con">
+                                                        <a title="" class="lightbox-item grid-item-mask-link" href="images/photography/asia/south_korea/gate_1_expanded.jpg" data-type="" data-size="1200x676"><img class="lightbox-img-hide" width="1200" height="676" src="images/photography/asia/south_korea/gate_1_expanded.jpg" alt="P9" title="P9" /></a>
+                                                                
+                                                        <div class="grid-item-con-text">
+                                                            <span class="grid-item-cate"><a href="#" title="View all posts in Life" class="grid-item-cate-a"data-filter=.>Life</a></span>
+                                                            <h2 class="grid-item-tit">P9</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="brick-content ux-lazyload-wrap" style=" padding-top: 76.92%;"> 
+                                                        <img class="ux-lazyload-img lazy" width="1200" height="676" alt="P9" title="P9" src="images/photography/asia/south_korea/gate_1_preview.jpg" data-src="images/photography/asia/south_korea/gate_1_preview.jpg"/>
+                                                    </div>
+                                                                
+                                                </div><!--End inside-->
+
+                                            </section> 
+
+
+                                            <section class="grid-item grid-item-big   filter_photography filter_seoul" data-postid="318">
+                                                <div class="grid-item-inside" data-lightbox="true">
+                                                    <div class="grid-item-con">
+                                                        <a title="" class="lightbox-item grid-item-mask-link" href="images/photography/asia/south_korea/statue_2_expanded.jpg" data-type="" data-size="1400x823"><img class="lightbox-img-hide" width="1400" height="823" src="images/photography/asia/south_korea/statue_2_expanded.jpg" alt="P10" title="P10" /></a>
+                                                                
+                                                        <div class="grid-item-con-text">
+                                                            <span class="grid-item-cate"><a href="#" title="View all posts in People" class="grid-item-cate-a"data-filter=.>People</a></span>
+                                                            <h2 class="grid-item-tit">P10</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="brick-content ux-lazyload-wrap" style=" padding-top: 123.076%;"> 
+                                                        <img class="ux-lazyload-img lazy" width="1400" height="823" alt="P10" title="P10" src="images/photography/asia/south_korea/statue_2_preview.jpg" data-src="images/photography/asia/south_korea/statue_2_preview.jpg"/>
+                                                    </div>
+                                                            
+                                                </div><!--End inside-->
+
+                                            </section> 
+                            
+                                            <section class="grid-item  filter_photography filter_tokyo" data-postid="314">
+                                                <div class="grid-item-inside" data-lightbox="true">
+                                                    <div class="grid-item-con">
+                                                        <a title="" class="lightbox-item grid-item-mask-link" href="images/photography/asia/tokyo/sake_1_expanded.jpg" data-type="" data-size="1400x808"><img class="lightbox-img-hide" width="1400" height="808" src="images/photography/asia/tokyo/sake_1_expanded.jpg" alt="P8" title="P8" /></a>
+                                                                
+                                                        <div class="grid-item-con-text">
+                                                            <span class="grid-item-cate"><a href="#" title="View all posts in Travel" class="grid-item-cate-a"data-filter=.>Travel</a></span>
+                                                            <h2 class="grid-item-tit">P8</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="brick-content ux-lazyload-wrap" style=" padding-top:61.5384615385%;"> 
+                                                        <img class="ux-lazyload-img lazy" width="1400" height="808" alt="P8" title="P8" src="images/photography/asia/tokyo/sake_1_preview.jpg" data-src="images/photography/asia/tokyo/sake_1_preview.jpg"/>
+                                                    </div>
+                                                            
+                                                </div><!--End inside-->
+
+                                            </section> 
+                            
+                                            <section class="grid-item  filter_photography filter_tokyo">
+                                                <div class="grid-item-inside" data-lightbox="true">
+                                                    <div class="grid-item-con">
+                                                        <a title="" class="lightbox-item grid-item-mask-link" href="images/photography/asia/tokyo/shinjuku_1_expanded.jpg" data-type="" data-size="4032x2268"><img class="lightbox-img-hide" width="4032" height="2268" src="images/photography/asia/tokyo/shinjuku_1_expanded.jpg" alt="P6" title="P6" /></a>
+                                                                
+                                                        <div class="grid-item-con-text">
+                                                            <span class="grid-item-cate"><a href="#" title="View all posts in Travel" class="grid-item-cate-a"data-filter=.>Travel</a></span>
+                                                            <h2 class="grid-item-tit">P6</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="brick-content ux-lazyload-wrap" style=" padding-top: 100%;"> 
+                                                        <img class="ux-lazyload-img lazy" width="4032" height="2268" alt="P6" title="P6" src="images/photography/asia/tokyo/shinjuku_1_preview.jpg" data-src="images/photography/asia/tokyo/shinjuku_1_preview.jpg"/>
+                                                    </div>
+                                                                
+                                                </div><!--End inside-->
+
+                                            </section> 
+                                
+                                            <section class="grid-item   filter_photography filter_seoul">
+                                                <div class="grid-item-inside" data-lightbox="true">
+                                                    <div class="grid-item-con">
+                                                        <a title="" class="lightbox-item grid-item-mask-link" href="images/photography/asia/south_korea/high_1_expanded.jpg" data-type="" data-size="4032x2268"><img class="lightbox-img-hide" width="4032" height="2268" src="images/photography/asia/south_korea/high_1_expanded.jpg" alt="P5" title="P5" /></a>
+                                                                    
+                                                        <div class="grid-item-con-text">
+                                                            <span class="grid-item-cate"><a href="#" title="View all posts in People" class="grid-item-cate-a"data-filter=.>People</a></span>
+                                                            <h2 class="grid-item-tit">P5</h2>
+                                                        </div>
+                                                    </div>
+                                                        <div class="brick-content ux-lazyload-wrap" style=" padding-top: 153.84615384615%;"> 
+                                                            <img class="ux-lazyload-img lazy" width="4032" height="2268" alt="P5" title="P5" src="images/photography/asia/south_korea/high_1_preview.jpg" data-src="images/photography/asia/south_korea/high_1_preview.jpg"/>
+                                                        </div>
+                                                    
+                                                </div><!--End inside-->
+
+                                            </section> 
+                                          
+                                            
+                                            <section class="grid-item   filter_photography filter_seoul">
+                                                <div class="grid-item-inside" data-lightbox="true">
+                                                    <div class="grid-item-con">
+                                                        <a title="" class="lightbox-item grid-item-mask-link" href="images/photography/asia/south_korea/house_1_expanded.jpg" data-type="" data-size="1200x625"><img class="lightbox-img-hide" width="1200" height="625" src="images/photography/asia/south_korea/house_1_expanded.jpg" alt="P3" title="P3" /></a>
+                                                                            
+                                                        <div class="grid-item-con-text">
+                                                            <span class="grid-item-cate"><a href="#" title="View all posts in Life" class="grid-item-cate-a"data-filter=.>Life</a></span>
+                                                            <h2 class="grid-item-tit">P3</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="brick-content ux-lazyload-wrap" style=" padding-top: 100%;"> 
+                                                        <img class="ux-lazyload-img lazy" width="1200" height="625" alt="P3" title="P3" src="images/photography/asia/south_korea/house_1_preview.jpg" data-src="images/photography/asia/south_korea/house_1_preview.jpg"/>
+                                                    </div>
+                                                                
+                                                </div><!--End inside-->
+
+                                            </section>
+
+                                            <section class="grid-item grid-item—width2 filter_tokyo" data-postid="331">
+                                                <div class="grid-item-inside" data-lightbox="true">
+                                                    <div class="grid-item-con">
+                                                        <a title="" class="lightbox-item grid-item-mask-link" href="images/photography/asia/tokyo/garden_1_expanded.jpg" data-type="" data-size="1200x675"><img class="lightbox-img-hide" width="1200" height="675" src="images/photography/asia/tokyo/garden_1_expanded.jpg" alt="P15" title="P15" /></a>
+                                                                
+                                                        <div class="grid-item-con-text">
+                                                            <span class="grid-item-cate"><a href="#" title="View all posts in Life" class="grid-item-cate-a"data-filter=.>Life</a></span>
+                                                            <h2 class="grid-item-tit">P15</h2>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="brick-content ux-lazyload-wrap" style=" padding-top: 66.461538461538%;"> 
+                                                        <img class="ux-lazyload-img lazy" width="1200" height="675" alt="P15" title="P15" src="images/photography/asia/tokyo/garden_1_preview.jpg" data-src="images/photography/asia/tokyo/garden_1_preview.jpg"/>
+                                                    </div>
+                                                            
+                                                </div><!--End inside-->
+
+                                            </section> 
+
+                                            <section class="grid-item   filter_photography filter_seoul">
+                                                <div class="grid-item-inside" data-lightbox="true">
+                                                    <div class="grid-item-con">
+                                                        <a title="" class="lightbox-item grid-item-mask-link" href="images/photography/asia/south_korea/gateplus_1_expanded.jpg" data-type="" data-size="1200x675"><img class="lightbox-img-hide" width="1200" height="675" src="images/photography/asia/south_korea/gateplus_1_expanded.jpg" alt="P3" title="P3" /></a>
+                                                                            
+                                                        <div class="grid-item-con-text">
+                                                            <span class="grid-item-cate"><a href="#" title="View all posts in Life" class="grid-item-cate-a"data-filter=.>Life</a></span>
+                                                            <h2 class="grid-item-tit">P3</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="brick-content ux-lazyload-wrap" style=" padding-top: 100%;"> 
+                                                        <img class="ux-lazyload-img lazy" width="1200" height="675" alt="P3" title="P3" src="images/photography/asia/south_korea/gateplus_1_preview.jpg" data-src="images/photography/asia/south_korea/gateplus_1_preview.jpg"/>
+                                                    </div>
+                                                                
+                                                </div><!--End inside-->
+
+                                            </section>
+
+                                            
+
+
+
+
+                                            
+
+            
+                                        </div><!--End masonry-list-->
+
+                                    </div><!-- End container-masonry -->
+
+                                </div><!-- End #content_wrap-->
+
+                        </div><!-- End content_wrap_outer-->
+
                     </div><!--End #content-->
 
-                    <!-- Footer -->
-                    <footer id="footer" class="footer-cols-layout footer-cols-layout-mobile">
+                    <footer id="footer" class="footer-cols-layout">
 
-                        <div class="footer-info footer-horizon-left footer-horizon-left-mobile">
-                            
-                            <div class="container-fluid">
-
-                                <div class="footer-cols-item footer-cols-item-mobile">
-
-                                    <div class="copyright"><a  title="Designed by SeaTheme" style="font-family: 'Amatic SC';">Hey! You made it :D</div>
+                        <div class="footer-info">
+                            <div class="footer-container">
+                                <div class="span6">
+                                    <div id="logo-footer">
+                                        <a href="index.html" title="Air Theme">
+                                            
+                                        </a>
+                                    </div>
                                 </div>
+
+                                
                             </div>
                         </div>
+
+                       
+
                     </footer>
 
-                </div><!--End #wrap -->
-    	  
-            </div><!--End #wrap-outer-->
 
-            <!-- Lightbox -->
-            <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
-                <div class="pswp__bg"></div>
 
-                <div class="pswp__scroll-wrap">
 
-                    <div class="pswp__container">
-                        <div class="pswp__item"></div>
-                        <div class="pswp__item"></div>
-                        <div class="pswp__item"></div>
-                    </div>
 
-                    <div class="pswp__ui pswp__ui--hidden">
 
-                        <div class="pswp__top-bar">
 
-                            <div class="pswp__counter"></div>
-                            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                            <button class="pswp__button pswp__button--share" title="Share"></button>
-                            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                            <div class="pswp__preloader">
-                                <div class="pswp__preloader__icn">
-                                  <div class="pswp__preloader__cut">
-                                    <div class="pswp__preloader__donut"></div>
-                                  </div>
+
+
+                    <!-- <footer id="footer" class="footer-cols-layout">
+
+                        <div class="footer-info">
+                            <div class="footer-container">
+                                <div class="span6">
+                                    <div id="logo-footer">
+                                        <a href="index.html" title="Air Theme">
+                                            <img class="logo-footer-img" src="img/demo/logo_dark.png" alt="Air Theme" />
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="span6">
+                                    <div class="footer-social">
+                                        <ul class="socialmeida clearfix">                       
+                                            
+                                            <li class="socialmeida-li">
+                                                <a title="Facebook" href="https://www.facebook.com/uiueux" class="socialmeida-a">
+                                                    <span class=""></span> <span class="socialmeida-text">Facebook</span>
+                                                </a>
+                                            </li>
+                                            
+                                            <li class="socialmeida-li">
+                                                <a title="Twitter" href="https://twitter.com/uiueux" class="socialmeida-a">
+                                                    <span class=""></span> <span class="socialmeida-text">Twitter</span>
+                                                </a>
+                                            </li>
+                                            
+                                            <li class="socialmeida-li">
+                                                <a title="Behance" href="https://www.behance.net/bwsm" class="socialmeida-a">
+                                                    <span class=""></span> <span class="socialmeida-text">Behance</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                            <div class="pswp__share-tooltip"></div> 
-                        </div>
+                        <div class="container-fluid back-top-wrap"><div id="back-top"></div></div>
 
-                        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-                        </button>
-                        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-                        </button>
+                    </footer>-->
 
-                        <div class="pswp__caption">
-                            <div class="pswp__caption__center"></div>
-                        </div>
-
-                    </div>
-
-                </div><!--End pswp__scroll-wrap-->
-
-            </div><!--End pswp-->
+                </div><!--End #wrap -->  
+    	       
+               <div class="video-overlay modal"><span class="video-close"></span></div><!--end video-overlay-->
+    	  
+            </div><!--End wrap-outer-->
 
         </div><!--End wrap-all-->
-        
-        <div id="get-scroll-width"></div>
+
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+            <div class="pswp__bg"></div>
+
+            <div class="pswp__scroll-wrap">
+
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+
+                <div class="pswp__ui pswp__ui--hidden">
+
+                    <div class="pswp__top-bar">
+
+                        <div class="pswp__counter"></div>
+
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                              <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div> 
+                    </div>
+
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                    </button>
+
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                    </button>
+
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
 
         <!-- jQuery Library -->
-        <script src='js/library/jquery.min.js'></script>
-        <!-- Underscore -->
-        <script src='js/underscore.min.js'></script>
-        <!-- Modernizr -->
-        <script src='js/modernizr-custom.js'></script>
-        <!-- Waypoints Plugin -->
-        <script src='js/jquery.waypoints.min.js'></script>
-        <!-- ImageLoaded Plugin-->
-        <script src='js/imagesloaded.pkgd.min.js'></script>
-        <!-- isotope Plugin -->
-        <script src='js/isotope.pkgd.min.js'></script>
-        <!-- Packery layout mode -->
-        <script src='js/packery-mode.pkgd.min.js'></script>
-        <!-- Photoswipe Plugin -->
-        <script src='js/photoswipe.min.js'></script>
-        <!-- Photoswipe Plugin UI -->
-        <script src='js/photoswipe-ui-default.min.js'></script>
-        <!-- OWL Carousel Plugin -->
-        <script src='js/owl.carousel.min.js'></script>
-        <!-- Lazy Load Plugin-->
-        <script src='js/lazyload.min.js'></script>
-        <!-- jplayer Plugin -->
-        <script src='js/jquery.jplayer.min.js'></script>
-        <!-- Modules Global js-->
-        <script src='js/modules-global.js'></script>
-        <!-- Text Module js-->
-        <script src='js/mod/text.js'></script>
-        <!-- Single Image Module js-->
-        <script src='js/mod/single-image.js'></script>
-        <!-- Slide Module js-->
-        <script src='js/mod/slider.js'></script>
-        <!-- Grid Module js-->
-        <script src='js/mod/grid.js'></script>
-        <!-- Masonry Grid Module js-->
-        <script src='js/mod/masonry-grid.js'></script>
-        <!-- Embed Module js-->
-        <script src='js/mod/embed.js'></script>
-        <!-- Contact Form Module js-->
-        <script src='js/mod/contact-form.js'></script>
-        <!-- Single Portfolio js -->
-        <script src='js/portfolio-2col.js'></script>
-        <!-- Theme main js -->
-        <script src='js/custom.theme.js'></script>
+        <script type='text/javascript' src='air_js/library/jquery.min.js'></script>
+        <!-- Main Js Plugin -->
+        <script type='text/javascript' src='air_js/main.min.js'></script>
+        <!-- Air. Theme main js -->
+        <script type='text/javascript' src='air_js/custom.theme.js'></script>
 
     </body>
 </html>
