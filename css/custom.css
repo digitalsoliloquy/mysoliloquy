@@ -228,12 +228,12 @@ input.search_top_form_text:focus::placeholder {
 .show_mobile_menu .menu-panel-bottom a:hover,
 .show_mobile_menu .menu-panel-bottom a:hover .fa {
 	/* Menu mouseover color (on expanded panel) */
-	color: #D4AF37;
+	color: #222222;
 }
 
 .navi li.current-menu-item > a {
 	/* Menu Current Item color (on expanded panel) */
-	color: ##D4AF37;
+	color: #222222;
 }
 
 /* Logo text color*/
